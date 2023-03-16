@@ -3,7 +3,7 @@ _Globbing ist das Ersetzen von Zeichen mit Hilfe von Wildcards._
 
 
 Folgende Zeichen sind **Wildcards**:
-* - _ersetzt beliebig viele oder auch keine Zeichen_
+\* - _ersetzt beliebig viele oder auch keine Zeichen_
 
 
 ? - _ersetzt genau ein Zeichen_
