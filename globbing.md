@@ -13,22 +13,22 @@ _Globbing ist das Ersetzen von Zeichen mit Hilfe von Wildcards._
 
 
 ### Beispiele
-cat datei*
+ls datei*
 
 
-cat datei?
+ls datei?
 
 
-cat datei[1-3]
+ls datei[1-3]
 
 
-cat datei[A-Fa-g3-9]
+ls datei[A-Fa-g3-9]
 
 
-cat datei[!what]
+ls datei[!what]
 
 
-cat datei[[?*/]
+ls datei[[?*/]
 
 
 ### Unterschiede in der Anwendung beachten
