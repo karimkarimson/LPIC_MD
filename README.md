@@ -1,5 +1,6 @@
 # Willkommen im LPIC 1 Repository
 + _Hier werden verschiedene Lernausfluege rund um das Curriculum zum **LPIC 1** festgehalten_
+
 + Mitbearbeitung ist erwünscht! & gerne auch kleine Vorträge!
 
 
@@ -39,4 +40,6 @@
 > + Zugangsberechtigungen
 > + Verknüpfungen & Zeiger
 > + RootVZ-Struktur
+
+
 _Ende Buch 1_
