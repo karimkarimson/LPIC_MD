@@ -3,7 +3,6 @@
 > `ssh-keygen`
 > > `ssh-keygen -t ed25519`
 
-
 > > ed25519
 
 
