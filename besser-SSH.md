@@ -5,46 +5,35 @@
 
 > > ed25519
 
-
 > > `ssh-keygen -l -f test.pub`
-
 
 > > create/show Fingerprint (why fingerprint?)
 
-
 > > `ssh-keygen -A`
 
-
 > > create host keys
-
 
 > `ssh-keyscan`
 > > `ssh-keyscan localhost`
 
-
 > > zeigt alle vorhandenen Keys an, kann auch über IP-Adressbereiche ausgelöst werde
-
 
 ### Key-Handling in Besser
 > `ssh-agent`
 > > Passiert eigentlich automatisch
 > `ssh-add`
 
-
 ### Key Benutzung
 > `ssh/sftp`
 > `sshd/sftpd`
-
 
 ### Dokumentation
 > `man (5) ssh_config`
 > `sshd_config`
 > `man ssh`
 
-
 ### SSH-Daemon
 > `sudo /usr/sbin/sshd -p 1027 -f /etc/ssh/sshd_config -d`
-
 
 ### Debugging
 > `ssh -v ab@login.XYZ`
@@ -54,7 +43,6 @@
 > > aufgebaut worden wäre.
 > > > `ssh -G XYZ | egrep -i '(hostname|jump)'`
 _for each parameter, the first obtained value will be used_
-
 
 ### Public Keys & Umgebung
 Key besteht aus 3-Teilen:
@@ -71,7 +59,6 @@ Key besteht aus 3-Teilen:
 > kann zum Beispiel vorgeben wie lange man warten (sleep) muss bis man etwas machen kann
 > oder, dass man einen Tunnel aufbauen kann(?)
 
-
 ### SSH config
 `~/.ssh/config`
 > Kann man geschickt nutzen um zu Automatisieren, Stichwort Key-Rollover
@@ -79,11 +66,9 @@ Key besteht aus 3-Teilen:
 > > > `Host`
 > > > > `UpdateHostKeys          yes`
 
-
 ### Remote Execution
 `ssh root@beispiel -t --systemctl restart stunnel4`
 **-t** macht es interaktiv
-
 
 ### Portforwarding
 In der Config unter Host XYZ LocalForward einstellen dann,
@@ -101,10 +86,8 @@ In der Config unter Host XYZ LocalForward einstellen dann,
 > `export GPG_TTY$(tty)`
 > `git tag --sign ...`
 
-
 ### Jump Host
 Um automatisch über mehrere Hosts sich zu verbinden, so lassen sich Verbindungen über mehrere Sub-Netze und Sub-Sub-Netze einfacher herstellen lassen (weniger Tippen)
-
 
 ### Talk to your SSH
 wenn verbunden, dann automatisch über folgende Befehle
@@ -112,12 +95,10 @@ wenn verbunden, dann automatisch über folgende Befehle
 > + `<enter>~?`    - more commands
 > + `<enter>~#`    - list forwarded connections
 
-
 ### SSH-Reagent
 Keys
 > `ssh XYZ -t --screen`
 > > `ssh XYZ -t --screen -x`
-
 
 ### SSH & Pipes
 `ssh XYZ --dd if=/dev/sda bs=512 count=1 | dd of=mbr-backup`
